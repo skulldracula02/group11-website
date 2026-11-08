@@ -422,14 +422,9 @@ body > main {
 .package-gallery-main {
   width: 100%;
   height: clamp(145px, 23vw, 285px);
-  object-fit: cover;
-  border-radius: 5px;
-}
 
 .package-gallery-thumbnails {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 6px;
-  margin-top: 7px;
-}
+
 
