@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the Family Explore Package, with nature walks, obstacle courses, family games and a guided wildlife walk.">
+  <title>Adventure SA | Family Explore Package</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a class="current" href="family-explore.html" aria-current="page">Details</a><a href="contact.html">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="package-detail-main">
+    <header class="package-detail-heading">
+      <h1>Family Explore Package</h1>
+      <strong class="package-detail-price">R1 500</strong>
+      <a class="button button-small" href="booking.html">Book us</a>
+    </header>
+    <div class="package-detail-grid">
+      <section class="package-gallery" aria-label="Family Explore Package photos">
+        <img class="package-gallery-main" src="assets/corporate.jpg" alt="A family member exploring a woodland boardwalk">
+        <div class="package-gallery-thumbnails">
+          <button type="button" aria-label="Show nature walk photo" aria-pressed="true" data-gallery-image="assets/corporate.jpg" data-gallery-alt="A family member exploring a woodland boardwalk"><img src="assets/corporate.jpg" alt=""><span>01</span></button>
+          <button type="button" aria-label="Show obstacle course photo" aria-pressed="false" data-gallery-image="assets/kayaking.jpg" data-gallery-alt="A group taking part in an outdoor team activity"><img src="assets/kayaking.jpg" alt=""><span>02</span></button>
+          <button type="button" aria-label="Show family games photo" aria-pressed="false" data-gallery-image="assets/family.jpg" data-gallery-alt="Outdoor adventure activity in a forest"><img src="assets/family.jpg" alt=""><span>03</span></button>
+          <button type="button" aria-label="Show picnic area photo" aria-pressed="false" data-gallery-image="assets/hero.jpg" data-gallery-alt="A quiet wooded waterway"><img src="assets/hero.jpg" alt=""><span>04</span></button>
+          <button type="button" aria-label="Show guided walk photo" aria-pressed="false" data-gallery-image="assets/about us.jpg" data-gallery-alt="Hikers following a mountain trail"><img src="assets/about us.jpg" alt=""><span>05</span></button>
+        </div>
+        <section class="package-about">
+          <h2>About this package</h2>
+          <p>Explore nature, tackle fun challenges, spot wildlife and enjoy games that get everyone involved. From the little explorers to the big ones, the Family Explore Package is all about getting outside, having fun and creating those “remember when we...” moments together.</p>
+        </section>
+      </section>
+      <section class="package-activities" aria-labelledby="included-activities">
+        <h2 id="included-activities">Included Activities</h2>
+        <div class="package-activity-list">
+          <article class="package-activity"><img src="assets/corporate.jpg" alt=""><h3>Nature Walk</h3></article>
+          <article class="package-activity"><img src="assets/kayaking.jpg" alt=""><h3>Obstacle Course</h3></article>
+          <article class="package-activity"><img src="assets/family.jpg" alt=""><h3>Family Games</h3></article>
+          <article class="package-activity"><img src="assets/hero.jpg" alt=""><h3>Picnic Area</h3></article>
+          <article class="package-activity"><img src="assets/about us.jpg" alt=""><h3>Guided Wildlife Walk</h3></article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

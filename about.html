@@ -3,118 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Adventure Escape SA, our mission, vision and outdoor experiences.">
   <title>Adventure SA | About Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <a href="index.html">
-      <img src="assets/logo.png"
-           alt="Adventure Escape SA logo"
-           width="200">
-    </a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home">
+        <img src="assets/logo.png" alt="Adventure Escape SA">
+      </a>
 
-    <nav aria-label="Main navigation">
-         <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <button><a href="Book_us.html">Book us</a></button>
-    </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a class="current" href="about.html" aria-current="page">About Us</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button>
+          <div class="dropdown-menu" id="package-menu">
+            <a href="packages.html">All packages</a>
+            <a href="ultimate-adventure.html">Ultimate Adventure Day</a>
+          </div>
+        </div>
+        <a href="ultimate-adventure.html">Details</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <main class="about-main">
+    <div class="about-layout">
+      <img class="about-image" src="assets/about us.jpg" alt="Hikers climbing a rocky mountain trail">
 
-  <main>
-    <h1>About Adventure SA</h1>
+      <div class="about-content">
+        <h1>About Adventure SA</h1>
+        <p class="about-intro">
+          Adventure SA is a tourism company that provides exciting outdoor
+          experiences for individuals, families, and groups. We make it easy for
+          people to discover, explore, and book memorable adventures with us.
+        </p>
 
-    <img src="assets/about us.jpg"
-         alt="A group of hikers climbing a rocky mountain"
-         width="400">
+        <div class="about-facts">
+          <section class="about-fact">
+            <h2>History</h2>
+            <p>Adventure SA was established in 2018 with the aim of making outdoor adventure experiences more accessible to everyone. The company started with a passion for exploring South Africa's natural beauty and has grown to offer exciting activities such as hiking, rock climbing, kayaking and ziplining. Today, Adventure SA is committed to providing memorable, safe and enjoyable experiences for individuals, families and groups.</p>
+          </section>
+          <section class="about-fact">
+            <h2>Goal</h2>
+            <p>Our goal is to encourage more people to explore South Africa through exciting outdoor activities. We aim to provide affordable adventure packages, maintain high safety standards, promote local tourist destinations and ensure every customer enjoys a memorable experience.</p>
+          </section>
+          <section class="about-fact">
+            <h2>Vision</h2>
+            <p>To become one of South Africa's leading adventure tourism companies, recognised for unforgettable outdoor experiences, excellent customer service and a commitment to safe and responsible tourism.</p>
+          </section>
+          <section class="about-fact">
+            <h2>Mission</h2>
+            <p>Our mission is to make outdoor adventures accessible, enjoyable and memorable for everyone by offering safe, affordable and high-quality adventure experiences while promoting South Africa's natural beauty.</p>
+          </section>
+        </div>
 
-    <p>
-      Adventure Escape SA is an tourism company that provides
-      exciting outdoor experiences for individuals, families,
-      and groups. We make it easy for people to discover,
-      explore and book memorable adventures with us
-    </p>
+        <section class="about-activities">
+          <h2>Adventures / Solo Activities</h2>
+          <p>Explore our packages, or discover individual activities including ziplining, kayaking and rock climbing.</p>
+        </section>
 
-    <section>
-      <h2>History</h2>
-      <p>
-        Our story is about a love of the outdoors and the
-        possibilities of adventure.
-      </p>
-    </section>
-
-    <section>
-      <h2>Goal</h2>
-      <p>
-        Our goals are to create exceptional, safe adventures,
-        promote South Africa’s beauty, welcome diverse groups,
-        build lasting relationships, and become a trusted
-        adventure destination
-      </p>
-    </section>
-
-    <section>
-      <h2>Vision</h2>
-      <p>
-        To become a trusted adventure brand known for unforgettable
-        experiences, excellent services and making outdoor adventure
-        accessible to everyone.
-      </p>
-    </section>
-
-    <section>
-      <h2>Mission</h2>
-      <p>
-        To make outdoor adventure accessible, enjoyable and
-        memorable for everyone.
-      </p>
-    </section>
-
-    <section>
-      <h2>Adventures / Solo Activities</h2>
-      <p>
-        Explore our packages, or discover individual activities
-        including ziplining, kayaking and rock climbing.
-      </p>
-      <p><a href="packages.html">Explore our packages</a></p>
-    </section>
-
-    <section>
-      <h2>Up to 15% multi-booking discount</h2>
-      <p>A maximum discount of 15% applies to multi-bookings.</p>
-    </section>
+        <section class="about-discount">
+          <h2>Up to 15% multi-booking discount</h2>
+          <p>A maximum discount of 15% applies to multi-bookings.</p>
+        </section>
+      </div>
+    </div>
   </main>
 
-  <hr>
-
-  <footer>
-    <h2>Adventure SA</h2>
-    <p>
-      <a href="mailto:info@adventurescape.co.za">
-        info@adventurescape.co.za
-      </a>
-    </p>
-
-    <h3>Quick links</h3>
-    <nav aria-label="Footer navigation">
-         <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="Book_us.html">Book us</a>
-    </nav>
-
-    <h3>Working Hours</h3>
-    <p>
-      Mon–Sat 08:00–17:00<br>
-      Sun 08:00–12:00
-    </p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section>
+        <h2>Adventure SA</h2>
+        <a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a>
+      </section>
+      <section>
+        <h2>Quick links</h2>
+        <nav aria-label="Footer navigation">
+          <a href="home.html">Home</a><span>/</span>
+          <a href="about.html">About Us</a><span>/</span>
+          <a href="packages.html">Packages</a><span>/</span>
+          <a href="ultimate-adventure.html">Details</a><span>/</span>
+          <a href="booking.html">Book Us</a>
+        </nav>
+      </section>
+      <section>
+        <h2>Working Hours</h2>
+        <p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paddle a guided route with a kayak, paddle and safety equipment included.">
+  <title>Adventure SA | Kayaking Experience</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="package-activity-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a class="current" href="kayaking-experience.html" aria-current="page">Details</a><a href="contact.html">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="package-detail-main">
+    <header class="package-detail-heading">
+      <h1>Kayaking Experience</h1>
+      <strong class="package-detail-price">R750</strong>
+      <a class="button button-small" href="booking.html">Book us</a>
+    </header>
+    <div class="package-detail-grid">
+      <section class="package-gallery" aria-label="Kayaking Experience photos">
+        <img class="package-gallery-main" src="assets/hero.jpg" alt="Kayakers paddling along a forest waterway">
+        <div class="package-gallery-thumbnails package-reference-thumbnails">
+          <button type="button" aria-label="Show safety equipment photo" aria-pressed="false" data-gallery-image="assets/kayaking-gear.jpg" data-gallery-alt="Life jacket, paddle and kayaking safety gear"><img src="assets/kayaking-gear.jpg" alt=""><span>Safety equipment</span></button>
+          <button type="button" aria-label="Show guided route photo" aria-pressed="false" data-gallery-image="assets/hiking.jpg" data-gallery-alt="A guide leading a group along a mountain trail"><img src="assets/hiking.jpg" alt=""><span>Guided route</span></button>
+        </div>
+      </section>
+      <div class="package-info-stack">
+        <section class="package-included">
+          <h2>What’s Included</h2>
+          <p>Kayak and paddle · Fitted life jacket · Helmet where required · Guided route</p>
+        </section>
+        <section class="package-requirements">
+          <h2>Safety Requirements</h2>
+          <ol>
+            <li>Wear a fitted, fastened life jacket at all times on the water, and a helmet where required.</li>
+            <li>Follow the guide’s route and signals. Stay with the group and keep a safe distance between boats.</li>
+            <li>Hold your paddle as demonstrated. Do not stand or leave the kayak unless instructed.</li>
+            <li>If you capsize, stay calm, stay with the kayak and follow the guide. Do not swim to shore unless directed.</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

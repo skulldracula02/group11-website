@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bring your team together with outdoor challenges, orienteering, raft building and leadership exercises.">
+  <title>Adventure SA | Corporate Team Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a class="current" href="corporate-team-challenge.html" aria-current="page">Details</a><a href="contact.html">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="package-detail-main">
+    <header class="package-detail-heading">
+      <h1>Corporate Team Challenge</h1>
+      <strong class="package-detail-price">R1 500</strong>
+      <a class="button button-small" href="booking.html">Book us</a>
+    </header>
+    <div class="package-detail-grid">
+      <section class="package-gallery" aria-label="Corporate Team Challenge photos">
+        <img class="package-gallery-main" src="assets/kayaking.jpg" alt="A team working together on an outdoor obstacle course">
+        <div class="package-gallery-thumbnails">
+          <button type="button" aria-label="Show team obstacle course photo" aria-pressed="true" data-gallery-image="assets/kayaking.jpg" data-gallery-alt="A team working together on an outdoor obstacle course"><img src="assets/kayaking.jpg" alt=""><span>01</span></button>
+          <button type="button" aria-label="Show orienteering photo" aria-pressed="false" data-gallery-image="assets/mountain.jpg" data-gallery-alt="A group navigating a mountain route"><img src="assets/mountain.jpg" alt=""><span>02</span></button>
+          <button type="button" aria-label="Show raft building photo" aria-pressed="false" data-gallery-image="assets/hero.jpg" data-gallery-alt="A team activity on the river"><img src="assets/hero.jpg" alt=""><span>03</span></button>
+          <button type="button" aria-label="Show leadership activity photo" aria-pressed="false" data-gallery-image="assets/family.jpg" data-gallery-alt="Participants taking on an outdoor challenge"><img src="assets/family.jpg" alt=""><span>04</span></button>
+          <button type="button" aria-label="Show team awards photo" aria-pressed="false" data-gallery-image="assets/corporate.jpg" data-gallery-alt="The team exploring a forest trail"><img src="assets/corporate.jpg" alt=""><span>05</span></button>
+        </div>
+        <form class="package-enquiry" action="mailto:info@adventurescape.co.za" method="post" enctype="text/plain">
+          <h2>Enquire about this package</h2>
+          <label>Full Name<input name="name" type="text" autocomplete="name" placeholder="Enter your full name" required></label>
+          <label>Email Address<input name="email" type="email" autocomplete="email" placeholder="Enter your email address" required></label>
+          <label class="form-message">Message<textarea name="message" placeholder="Tell us about your group and requirements" required></textarea></label>
+          <button class="button button-small" type="submit">Send enquiry</button>
+        </form>
+      </section>
+      <section class="package-activities" aria-labelledby="included-activities">
+        <h2 id="included-activities">Included Activities</h2>
+        <div class="package-activity-list">
+          <article class="package-activity"><img src="assets/kayaking.jpg" alt=""><h3>Team Obstacle Course</h3></article>
+          <article class="package-activity"><img src="assets/mountain.jpg" alt=""><h3>Orienteering Challenge</h3></article>
+          <article class="package-activity"><img src="assets/hero.jpg" alt=""><h3>Raft Building Activity</h3></article>
+          <article class="package-activity"><img src="assets/family.jpg" alt=""><h3>Leadership Exercises</h3></article>
+          <article class="package-activity"><img src="assets/corporate.jpg" alt=""><h3>Team Awards Ceremony</h3></article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

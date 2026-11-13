@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (bookingForm instanceof HTMLFormElement && calculateBooking instanceof HTMLButtonElement) {
     const feedback = bookingForm.querySelector('#booking-feedback');
+    const confirmation = bookingForm.querySelector('#booking-confirmation');
     const subtotalOutput = bookingForm.querySelector('#booking-subtotal');
     const discountOutput = bookingForm.querySelector('#booking-discount');
     const vatOutput = bookingForm.querySelector('#booking-vat');
@@ -144,7 +145,22 @@ document.addEventListener('DOMContentLoaded', () => {
         `Total: R${totals.total.toFixed(2)}`
       ].join('\n');
 
-      window.location.href = `mailto:info@adventurescape.co.za?subject=${encodeURIComponent('Adventure booking request')}&body=${encodeURIComponent(body)}`;
+      if (confirmation) {
+        confirmation.hidden = false;
+        confirmation.textContent = 'Your booking enquiry was submitted successfully. A confirmation email is being prepared for you.';
+      }
+
+      const recipient = 'clementtshwarelo1@gmail.com';
+      const subject = 'Adventure booking request';
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.setTimeout(() => {
+        const gmailWindow = window.open(gmailUrl, '_blank');
+        if (!gmailWindow) {
+          window.location.href = mailtoLink;
+        }
+      }, 250);
     });
   }
 });

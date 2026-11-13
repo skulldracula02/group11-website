@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore mountain trails, scenic viewpoints and rock scrambling with the Mountain Adventure package.">
+  <title>Adventure SA | Mountain Adventure</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a class="current" href="mountain-adventure.html" aria-current="page">Details</a><a href="contact.html">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="package-detail-main">
+    <header class="package-detail-heading">
+      <h1>Mountain Adventure</h1>
+      <strong class="package-detail-price">R1 500</strong>
+      <a class="button button-small" href="booking.html">Book us</a>
+    </header>
+    <div class="package-detail-grid">
+      <section class="package-gallery" aria-label="Mountain Adventure photos">
+        <img class="package-gallery-main" src="assets/hiking.jpg" alt="A hiker following a mountain trail">
+        <div class="package-gallery-thumbnails">
+          <button type="button" aria-label="Show mountain hike photo" aria-pressed="true" data-gallery-image="assets/hiking.jpg" data-gallery-alt="A hiker following a mountain trail"><img src="assets/hiking.jpg" alt=""><span>01</span></button>
+          <button type="button" aria-label="Show scenic viewpoint photo" aria-pressed="false" data-gallery-image="assets/mountain.jpg" data-gallery-alt="Hikers crossing a high mountain landscape"><img src="assets/mountain.jpg" alt=""><span>02</span></button>
+          <button type="button" aria-label="Show rock scrambling photo" aria-pressed="false" data-gallery-image="assets/rock-climbing.jpg" data-gallery-alt="Climbers scrambling on a rocky slope"><img src="assets/rock-climbing.jpg" alt=""><span>03</span></button>
+          <button type="button" aria-label="Show hiking equipment photo" aria-pressed="false" data-gallery-image="assets/hiking-gear.jpg" data-gallery-alt="Hiking equipment ready for a mountain trip"><img src="assets/hiking-gear.jpg" alt=""><span>04</span></button>
+          <button type="button" aria-label="Show guided hike photo" aria-pressed="false" data-gallery-image="assets/about us.jpg" data-gallery-alt="A guided group hike"><img src="assets/about us.jpg" alt=""><span>05</span></button>
+        </div>
+        <section class="package-about">
+          <h2>About this package</h2>
+          <p>Explore mountain hiking, a scenic viewpoint and rock scrambling, with safety equipment and a professional guide.</p>
+        </section>
+      </section>
+      <section class="package-activities" aria-labelledby="included-activities">
+        <h2 id="included-activities">Included Activities</h2>
+        <div class="package-activity-list">
+          <article class="package-activity"><img src="assets/hiking.jpg" alt=""><h3>Mountain Hiking</h3></article>
+          <article class="package-activity"><img src="assets/mountain.jpg" alt=""><h3>Scenic Viewpoint</h3></article>
+          <article class="package-activity"><img src="assets/rock-climbing.jpg" alt=""><h3>Rock Scrambling</h3></article>
+          <article class="package-activity"><img src="assets/hiking-gear.jpg" alt=""><h3>Safety Equipment</h3></article>
+          <article class="package-activity"><img src="assets/about us.jpg" alt=""><h3>Professional Guide</h3></article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

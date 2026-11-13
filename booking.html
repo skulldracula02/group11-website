@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose an Adventure SA package, enter your details and calculate your booking total.">
+  <title>Adventure SA | Book Your Adventure</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a href="packages.html">Details</a><a href="contact.html">Contact</a><a class="button button-small current" href="booking.html" aria-current="page">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="booking-main">
+    <header class="booking-heading">
+      <h1>Book Your Adventure</h1>
+      <p>Enter your details and select from the documented packages.</p>
+    </header>
+    <form class="booking-layout" id="booking-form">
+      <section class="booking-panel booking-customer">
+        <h2>Your Details</h2>
+        <label>Full Name<input name="firstName" type="text" autocomplete="given-name" placeholder="Enter your first name" required></label>
+        <label>Surname<input name="surname" type="text" autocomplete="family-name" placeholder="Enter your surname" required></label>
+        <label>Email Address<input name="email" type="email" autocomplete="email" placeholder="Enter your email address" required></label>
+        <label>Phone Number<input name="phone" type="tel" autocomplete="tel" placeholder="Enter your phone number" required></label>
+        <label>Number of People<input name="people" type="number" min="1" max="50" value="1" required></label>
+        <label>Preferred Date<input name="date" type="date" required></label>
+        <label>Preferred Time<input name="time" type="time" required></label>
+        <p class="booking-discount-note">Book multiple different packages to receive a discount. Maximum discount: 15%.</p>
+      </section>
+
+      <div class="booking-options">
+        <fieldset class="booking-panel booking-packages">
+          <legend>Select Packages</legend>
+          <div class="booking-package-heading"><span>Package</span><span>Price per person</span></div>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Rock Climbing Session" data-price="750"><span>Rock Climbing Session</span><strong>R750</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Kayaking Experience" data-price="750"><span>Kayaking Experience</span><strong>R750</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Ziplining Adventure" data-price="750"><span>Ziplining Adventure</span><strong>R750</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Corporate Team Challenge" data-price="1500"><span>Corporate Team Challenge</span><strong>R1 500</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Mountain Adventure" data-price="1500"><span>Mountain Adventure</span><strong>R1 500</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Family Explore Package" data-price="1500"><span>Family Explore Package</span><strong>R1 500</strong></label>
+          <label class="booking-package-option"><input type="checkbox" name="packages" value="Ultimate Adventure Day" data-price="1500"><span>Ultimate Adventure Day</span><strong>R1 500</strong></label>
+        </fieldset>
+
+        <section class="booking-summary" aria-labelledby="booking-summary-title" aria-live="polite">
+          <h2 id="booking-summary-title">Booking Summary</h2>
+          <div class="booking-summary-breakdown">
+            <p><span>Subtotal</span><strong id="booking-subtotal">R0.00</strong></p>
+            <p><span>Discount</span><strong id="booking-discount">R0.00</strong></p>
+            <p><span>VAT (15%)</span><strong id="booking-vat">R0.00</strong></p>
+          </div>
+          <p class="booking-total"><span>TOTAL incl VAT</span><strong id="booking-total">R0.00</strong></p>
+          <p class="booking-feedback" id="booking-feedback"></p>
+          <button class="button" type="button" id="calculate-booking">Calculate Total</button>
+          <button class="button booking-submit" type="submit">Send Booking Request</button>
+          <p class="booking-confirmation" id="booking-confirmation" role="status" aria-live="polite" hidden>Your booking enquiry was submitted successfully. A confirmation email is being prepared for you.</p>
+          <p class="booking-email-note">Sending a request opens your email app with the booking details prepared.</p>
+        </section>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:clementtshwarelo1@gmail.com">clementtshwarelo1@gmail.com</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

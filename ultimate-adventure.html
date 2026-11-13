@@ -3,194 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the Ultimate Adventure Day, with ziplining, hiking, kayaking, lunch and safety equipment.">
   <title>Adventure SA | Ultimate Adventure Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <a href="index.html">
-      <img src="assets/logo.png"
-           alt="Adventure Escape SA logo"
-           width="200">
-    </a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home">
+        <img src="assets/logo.png" alt="Adventure Escape SA">
+      </a>
 
-    <nav aria-label="Main navigation">
-              <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <button><a href="Book_us.html">Book us</a></button> 
-    </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button>
+          <div class="dropdown-menu" id="package-menu">
+            <a href="packages.html">All packages</a>
+            <a href="ultimate-adventure.html">Ultimate Adventure Day</a>
+          </div>
+        </div>
+        <a class="current" href="ultimate-adventure.html" aria-current="page">Details</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <main class="adventure-main">
+    <section class="adventure-heading" aria-labelledby="adventure-title">
+      <div>
+        <h1 id="adventure-title">Ultimate Adventure Day</h1>
+        <p>Ziplining · Hiking · Kayaking · Lunch · Safety equipment</p>
+      </div>
+      <div class="adventure-booking">
+        <a class="button" href="booking.html">Book us</a>
+        <strong class="adventure-price">R1 500</strong>
+      </div>
+    </section>
 
-  <main>
-    <h1>Ultimate Adventure Day</h1>
-    <p><strong>R1 500</strong></p>
-    <p><a href="Book_us.html">Book us</a></p>
-
-    <p>
-      Ziplining · Hiking · Kayaking · Lunch · Safety equipment
-    </p>
-
-    <section>
-      <h2>Activities and Safety Equipment</h2>
-
+    <section class="adventure-gallery" aria-label="Activities and included equipment">
       <figure>
-        <img src="assets/ultimate.jpg"
-             alt="Ziplining above the forest"
-             width="280">
+        <img src="assets/family.jpg" alt="Participants ziplining above a forest">
         <figcaption>Ziplining</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/hiking.jpg"
-             alt="A group hiking along a mountain trail"
-             width="280"
-             loading="lazy">
+        <img src="assets/hiking.jpg" alt="Hiker following a mountain trail">
         <figcaption>Hiking</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/ultimate-kayaking.jpg"
-             alt="A group kayaking along a tree-lined river"
-             width="280"
-             loading="lazy">
+        <img src="assets/hero.jpg" alt="A group kayaking along a wooded river">
         <figcaption>Kayaking</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/lunch.jpg"
-             alt="An outdoor picnic area"
-             width="280"
-             loading="lazy">
+        <img src="assets/lunch.jpg" alt="A group paddling on a tree-lined river">
         <figcaption>Lunch</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/kayaking-gear.jpg"
-             alt="Life jacket, paddle and kayaking equipment"
-             width="280"
-             loading="lazy">
+        <img src="assets/kayaking-gear.jpg" alt="Life jacket, paddle and kayaking equipment">
         <figcaption>Kayaking gear</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/hiking-gear.jpg"
-             alt="Hiking packs, ropes and equipment"
-             width="280"
-             loading="lazy">
+        <img src="assets/hiking-gear.jpg" alt="Hikers carrying packs on a mountain trail">
         <figcaption>Hiking gear</figcaption>
       </figure>
-
       <figure>
-        <img src="assets/ziplining-gear.jpg"
-             alt="Ziplining helmets and harnesses"
-             width="280"
-             loading="lazy">
+        <img src="assets/ziplining-gear.jpg" alt="Helmets and harnesses for ziplining">
         <figcaption>Ziplining gear</figcaption>
       </figure>
     </section>
 
-    <section>
-      <h2>Safety Guidelines</h2>
-
-      <section>
-        <h3>Kayaking</h3>
+    <section class="safety-section" aria-label="Safety guidelines">
+      <article class="safety-card">
+        <h2>Safety Guidelines for Kayaking</h2>
         <ol>
-          <li>
-            Wear a fitted, fastened life jacket at all times
-            on the water, and a helmet where required.
-          </li>
-          <li>
-            Follow the guide’s route and signals. Stay with
-            the group and keep a safe distance between boats.
-          </li>
-          <li>
-            Hold your paddle as demonstrated. Do not stand
-            or leave the kayak unless instructed.
-          </li>
-          <li>
-            If you capsize, stay calm, stay with the kayak
-            and follow the guide. Do not swim to shore
-            unless directed.
-          </li>
+          <li>Wear a fitted, fastened life jacket at all times on the water, and a helmet where required.</li>
+          <li>Follow the guide’s route and signals. Stay with the group and keep a safe distance between boats.</li>
+          <li>Hold your paddle as demonstrated. Do not stand or leave the kayak unless instructed.</li>
+          <li>If you capsize, stay calm, stay with the kayak and follow the guide.</li>
         </ol>
-      </section>
-
-      <section>
-        <h3>Hiking</h3>
+      </article>
+      <article class="safety-card">
+        <h2>Safety Guidelines for Hiking</h2>
         <ol>
-          <li>
-            Stay on the marked trail and within the group.
-            Tell your guide before moving ahead or falling behind.
-          </li>
-          <li>
-            Wear sturdy shoes. Carry sufficient water
-            and appropriate weather protection.
-          </li>
-          <li>
-            Watch your footing. Avoid cliff edges and
-            do not approach wildlife.
-          </li>
-          <li>
-            Immediately report fatigue, injury, overheating
-            or low water supplies to your guide.
-          </li>
+          <li>Stay on the marked trail and within the group. Tell your guide before moving ahead or falling behind.</li>
+          <li>Wear sturdy shoes. Carry sufficient water and appropriate weather protection.</li>
+          <li>Watch your footing. Avoid cliff edges and do not approach wildlife.</li>
+          <li>Report fatigue, injury, overheating or low water supplies to your guide immediately.</li>
         </ol>
-      </section>
-
-      <section>
-        <h3>Ziplining</h3>
+      </article>
+      <article class="safety-card">
+        <h2>Safety Guidelines for Ziplining</h2>
         <ol>
-          <li>
-            Use a secured harness and helmet. Staff must
-            check the equipment fit before every launch.
-          </li>
-          <li>
-            Follow all staff launch, braking and landing signals.
-            Position hands and feet as taught in the briefing.
-          </li>
-          <li>
-            Do not touch the cable or zipline equipment
-            while in motion.
-          </li>
-          <li>
-            Before launching, stop and alert staff if the
-            harness feels loose or uncomfortable.
-          </li>
+          <li>Use a secured harness and helmet. Staff must check the equipment fit before every launch.</li>
+          <li>Follow all staff launch, braking and landing signals. Position hands and feet as taught.</li>
+          <li>Do not touch the cable or zipline equipment while in motion.</li>
+          <li>Alert staff before launching if the harness feels loose or uncomfortable.</li>
         </ol>
-      </section>
+      </article>
     </section>
   </main>
 
-  <hr>
-
-  <footer>
-    <h2>Adventure SA</h2>
-    <p>
-      <a href="mailto:info@adventurescape.co.za">
-        info@adventurescape.co.za
-      </a>
-    </p>
-
-    <h3>Quick links</h3>
-    <nav aria-label="Footer navigation">
-              <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="Book_us.html">Book us</a>
-    </nav>
-
-    <h3>Working Hours</h3>
-    <p>
-      Mon–Sat 08:00–17:00<br>
-      Sun 08:00–12:00
-    </p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section>
+        <h2>Adventure SA</h2>
+        <a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a>
+      </section>
+      <section>
+        <h2>Quick links</h2>
+        <nav aria-label="Footer navigation">
+          <a href="home.html">Home</a><span>/</span>
+          <a href="about.html">About Us</a><span>/</span>
+          <a href="packages.html">Packages</a><span>/</span>
+          <a href="ultimate-adventure.html">Details</a><span>/</span>
+          <a href="booking.html">Book Us</a>
+        </nav>
+      </section>
+      <section>
+        <h2>Working Hours</h2>
+        <p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

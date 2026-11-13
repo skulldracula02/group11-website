@@ -3,172 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Adventure Escape SA packages, including family adventures, mountain hiking, kayaking, ziplining and rock climbing.">
   <title>Adventure SA | Packages</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <a href="index.html">
-      <img src="assets/logo.png"
-           alt="Adventure Escape SA logo"
-           width="200">
-    </a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home">
+        <img src="assets/logo.png" alt="Adventure Escape SA">
+      </a>
 
-    <nav aria-label="Main navigation">
-         <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <button><a href="Book_us.html">Book us</a></button>
-    </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button>
+          <div class="dropdown-menu" id="package-menu">
+            <a href="packages.html" aria-current="page">All packages</a>
+            <a href="ultimate-adventure.html">Ultimate Adventure Day</a>
+          </div>
+        </div>
+        <a href="ultimate-adventure.html">Details</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <main class="packages-main">
+    <section class="packages-heading">
+      <h1>Our Adventure Packages</h1>
+      <p>Choose a package or explore individual activities.</p>
+      <p class="activity-categories">Hiking&nbsp; / &nbsp;Kayaking&nbsp; / &nbsp;Swimming&nbsp; / &nbsp;Cable swing</p>
+    </section>
 
-  <main>
-    <h1>Our Adventure Packages</h1>
-    <p>Choose a package or explore individual activities.</p>
-    <p>Hiking / Kayaking / Swimming / Cable swing</p>
+    <section class="catalog-grid" aria-label="Adventure packages and activities">
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/family.jpg" alt="Adventurer ziplining above a forest" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Ultimate Adventure Day</h2>
+          <p>Ziplining · Hiking · Kayaking · Lunch · Safety equipment</p>
+          <strong class="catalog-price">R1 500</strong>
+          <a class="button catalog-view-button" href="ultimate-adventure.html">View package</a>
+        </div>
+      </article>
 
-    <article>
-      <img src="assets/ultimate.jpg"
-           alt="Adventurers ziplining above the forest"
-           width="280"
-           loading="lazy">
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/corporate.jpg" alt="A hiker walking a scenic forest trail" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Family Explore Package</h2>
+          <p>Nature walk · Obstacle course · Family games · Picnic area · Guided wildlife walk</p>
+          <strong class="catalog-price">R1 500</strong>
+          <a class="button catalog-view-button" href="family-explore.html">View package</a>
+        </div>
+      </article>
 
-      <h2>Ultimate Adventure Day</h2>
-      <p>
-        Ziplining · Hiking · Kayaking · Lunch · Safety equipment
-      </p>
-      <p><strong>R1 500</strong></p>
-      <p>
-        <a href="ultimate-adventure.html">View details</a>
-      </p>
-    </article>
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/mountain.jpg" alt="Mountain hiking trail and scenic viewpoint" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Mountain Adventure</h2>
+          <p>Mountain hiking · Scenic viewpoint · Rock scrambling · Safety equipment · Professional guide</p>
+          <strong class="catalog-price">R1 500</strong>
+          <a class="button catalog-view-button" href="mountain-adventure.html">View package</a>
+        </div>
+      </article>
 
-    <article>
-      <img src="assets/family.jpg"
-           alt="A nature walk through the forest"
-           width="280"
-           loading="lazy">
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/kayaking.jpg" alt="Team members completing an outdoor challenge" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Corporate Team Challenge</h2>
+          <p>Team obstacle course · Orienteering · Raft building · Leadership exercises · Team awards</p>
+          <strong class="catalog-price">R1 500</strong>
+          <a class="button catalog-view-button" href="corporate-team-challenge.html">View package</a>
+        </div>
+      </article>
 
-      <h2>Family Explore Package</h2>
-      <p>
-        Nature walk · Obstacle course · Family games ·
-        Picnic area · Guided wildlife walk
-      </p>
-      <p><strong>R1 500</strong></p>
-      <p>
-        <a href="family explore package.html">View details</a>
-      </p>
-    </article>
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/family.jpg" alt="Ziplining adventure with safety gear" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Ziplining Adventure</h2>
+          <p>Equipment and safety gear · Professional guide</p>
+          <strong class="catalog-price">R750</strong>
+          <a class="button catalog-view-button" href="ziplining-adventure.html">View package</a>
+        </div>
+      </article>
 
-    <article>
-      <img src="assets/mountain.jpg"
-           alt="A hiker exploring a mountain trail"
-           width="280"
-           loading="lazy">
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/hero.jpg" alt="Kayakers paddling along a forest waterway" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Kayaking Experience</h2>
+          <p>Kayak and paddle · Safety equipment · Guided route</p>
+          <strong class="catalog-price">R750</strong>
+          <a class="button catalog-view-button" href="kayaking-experience.html">View package</a>
+        </div>
+      </article>
 
-      <h2>Mountain Adventure</h2>
-      <p>
-        Mountain hiking · Scenic viewpoint · Rock scrambling ·
-        Safety equipment · Professional guide
-      </p>
-      <p><strong>R1 500</strong></p>
-      <p>
-        <a href="Mountain adventure.html">View details</a>
-      </p>
-    </article>
+      <article class="catalog-card">
+        <img class="catalog-image" src="assets/rock-climbing.jpg" alt="Climbers on a natural rock face" loading="lazy">
+        <div class="catalog-copy">
+          <h2>Rock Climbing Session</h2>
+          <p>Climbing equipment · Safety briefing · Professional guide</p>
+          <strong class="catalog-price">R750</strong>
+          <a class="button catalog-view-button" href="rock-climbing-session.html">View package</a>
+        </div>
+      </article>
 
-    <article>
-      <img src="assets/corporate.jpg"
-           alt="An outdoor team obstacle course"
-           width="280"
-           loading="lazy">
-
-      <h2>Corporate Team Challenge</h2>
-      <p>
-        Team obstacle course · Orienteering · Raft building ·
-        Leadership exercises · Team awards
-      </p>
-      <p><strong>R1 500</strong></p>
-      <p>
-        <a href="corporate team challenge.html">View details</a>
-      </p>
-    </article>
-
-    <article>
-      <img src="assets/ultimate.jpg"
-           alt="Participants enjoying a ziplining adventure"
-           width="280"
-           loading="lazy">
-
-      <h2>Ziplining Adventure</h2>
-      <p>Equipment and safety gear · Professional guide</p>
-      <p><strong>R750</strong></p>
-      <p><a href="ziplining adventure.html">View details</a></p>
-    </article>
-
-    <article>
-      <img src="assets/kayaking.jpg"
-           alt="People kayaking on a peaceful waterway"
-           width="280"
-           loading="lazy">
-
-      <h2>Kayaking Experience</h2>
-      <p>Kayak and paddle · Safety equipment · Guided route</p>
-      <p><strong>R750</strong></p>
-      <p><a href="kayaking.html">View details</a></p>
-    </article>
-
-    <article>
-      <img src="assets/rock-climbing.jpg"
-           alt="Rock climbers with a professional guide"
-           width="280"
-           loading="lazy">
-
-      <h2>Rock Climbing Session</h2>
-      <p>Climbing equipment · Professional guide</p>
-      <p><strong>R750</strong></p>
-      <p><a href="rockclimbing.html">View details</a></p>
-    </article>
-
-    <section>
-      <h2>Find your adventure</h2>
-      <p>
-        Seven documented offerings, with activity details on
-        each package screen.
-      </p>
-      <p><a href="Book_us.html">Book us</a></p>
+      <aside class="find-adventure">
+        <h2>Find your adventure</h2>
+        <p>Explore each package for included activities, safety information and booking details.</p>
+        <a class="button" href="booking.html">Book us</a>
+      </aside>
     </section>
   </main>
 
-  <hr>
-
-  <footer>
-    <h2>Adventure SA</h2>
-    <p>
-      <a href="mailto:info@adventurescape.co.za">
-        info@adventurescape.co.za
-      </a>
-    </p>
-
-    <h3>Quick links</h3>
-    <nav aria-label="Footer navigation">
-       <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="Book_us.html">Book us</a>
-    </nav>
-
-    <h3>Working Hours</h3>
-    <p>
-      Mon–Sat 08:00–17:00<br>
-      Sun 08:00–12:00
-    </p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section>
+        <h2>Adventure SA</h2>
+        <a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a>
+      </section>
+      <section>
+        <h2>Quick links</h2>
+        <nav aria-label="Footer navigation">
+          <a href="home.html">Home</a><span>/</span>
+          <a href="about.html">About Us</a><span>/</span>
+          <a href="packages.html">Packages</a><span>/</span>
+          <a href="ultimate-adventure.html">Details</a><span>/</span>
+          <a href="booking.html">Book Us</a>
+        </nav>
+      </section>
+      <section>
+        <h2>Working Hours</h2>
+        <p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

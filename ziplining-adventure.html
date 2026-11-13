@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experience a guided zipline adventure with safety equipment and a professional guide.">
+  <title>Adventure SA | Ziplining Adventure</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a class="current" href="ziplining-adventure.html" aria-current="page">Details</a><a href="contact.html">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="package-detail-main">
+    <header class="package-detail-heading">
+      <h1>Ziplining Adventure</h1>
+      <strong class="package-detail-price">R750</strong>
+      <a class="button button-small" href="booking.html">Book us</a>
+    </header>
+    <div class="package-detail-grid">
+      <section class="package-gallery" aria-label="Ziplining Adventure photos">
+        <img class="package-gallery-main" src="assets/family.jpg" alt="Participants ziplining above a forest">
+        <div class="package-gallery-thumbnails">
+          <button type="button" aria-label="Show zipline photo" aria-pressed="true" data-gallery-image="assets/family.jpg" data-gallery-alt="Participants ziplining above a forest"><img src="assets/family.jpg" alt=""><span>01</span></button>
+          <button type="button" aria-label="Show safety equipment photo" aria-pressed="false" data-gallery-image="assets/ziplining-gear.jpg" data-gallery-alt="Ziplining helmets and harnesses"><img src="assets/ziplining-gear.jpg" alt=""><span>02</span></button>
+          <button type="button" aria-label="Show forest adventure photo" aria-pressed="false" data-gallery-image="assets/corporate.jpg" data-gallery-alt="A forest adventure trail"><img src="assets/corporate.jpg" alt=""><span>03</span></button>
+          <button type="button" aria-label="Show hiking gear photo" aria-pressed="false" data-gallery-image="assets/hiking-gear.jpg" data-gallery-alt="Outdoor safety equipment"><img src="assets/hiking-gear.jpg" alt=""><span>04</span></button>
+          <button type="button" aria-label="Show another zipline photo" aria-pressed="false" data-gallery-image="assets/family.jpg" data-gallery-alt="Participants enjoying a zipline"><img src="assets/family.jpg" alt=""><span>05</span></button>
+        </div>
+        <section class="package-about">
+          <h2>Included</h2>
+          <p>Safety equipment and a professional guide are included with your ziplining adventure.</p>
+        </section>
+      </section>
+      <section class="package-safety" aria-labelledby="zipline-safety">
+        <h2 id="zipline-safety">Safety Rules</h2>
+        <ol>
+          <li>Listen to and follow the guides at all times.</li>
+          <li>Wear the helmet and harness as fitted. Never adjust or remove them without guide instruction.</li>
+          <li>Tie back long hair. Secure loose clothing, jewellery, phones and cameras before departure.</li>
+          <li>Remain attached to safety lines when instructed. Never unclip alone.</li>
+          <li>Wait for checks and the “Go” signal. Never clip, unclip or start independently.</li>
+          <li>Use only the demonstrated braking technique. Never grab the cable or wrap your hands around it.</li>
+          <li>Ride facing forward, with hands clear of pulleys and attachments.</li>
+          <li>On landing, follow the receiving guide. Do not use your feet to stop unless instructed.</li>
+          <li>One participant per line. No bouncing, swinging, racing or risk of collision.</li>
+          <li>If stopped mid-line, stay calm and still. Do not attempt self-rescue; wait for the guides.</li>
+          <li>Report illness, injury, pregnancy, medical conditions or equipment concerns before participating.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:info@adventurescape.co.za">info@adventurescape.co.za</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section><h2>Working Hours</h2><p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p></section>
+  </div></footer>
+</body>
+</html>

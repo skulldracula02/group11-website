@@ -1,171 +1,75 @@
-<!DOCTYPE html> 
-
-<html lang="en"> 
-
-<head> 
-
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <title>Contact Us</title> 
-
-</head> 
-
-<body> 
-
-     <header> 
-
-        <img src="images/Logo.png" width="100"> 
-
-        <nav> 
-
-               <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <button><a href="Book_us.html">Book us</a></button>
-
-        </nav> 
-
-    </header> 
-
-    <main> 
-
-        <section> 
-
-            <h1>Contact Adventure SA</h1> 
-
-            <p>Get in touch with us for enquiries or assistance.</p> 
-
-        </section> 
-
-        <section> 
-
-            <div> 
-
-                <h3>Phone</h3> 
-
-                <p>+27 72 717 7448</p> 
-
- 
-
-                <h3>Email</h3> 
-
-                <p>info@adventureescape.co.za</p> 
-
- 
-
-                <h3>Address 1</h3> 
-
-                <p>Adventurers Escape SA, 11 Charles Street Bitou 6600</p> 
-
-            </div> 
-
-            <div> 
-
-                <h2>Location Overview</h2> 
-
-                 
-
-                <!-- Google Maps iframe Embed --> 
-
-                <iframe  
-
-                    src="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiw3viS2ayXAxUAAAAAHQAAAAAQBQ..i&rlz=1C1HKFL_enZA1216ZA1217&sca_esv=afb89ae158309890&udm&fvr=1&pvq=CgsvZy8xdHA4ZnM3eiIaChRhZHZlbnR1cmUgYWN0aXZpdGllcxACGAM&lqi=CiF3ZXN0ZXJuIGNhcGUgYWR2ZW50dXJlIGFjdGl2aXRpZXNI_sGb1OaAgIAIWisQAhADGAEYAiIhd2VzdGVybiBjYXBlIGFkdmVudHVyZSBhY3Rpdml0aWVzkgEXYWR2ZW50dXJlX3Nwb3J0c19jZW50ZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUm9iazlpU1VwM0VBRfoBBAgAEDc&cs=0&um=1&ie=UTF-8&fb=1&gl=za&sa=X&ftid=0x1dcc434497710fd1:0x950b3ac3f0c90249&output=embed"  
-
-                    width="100%"  
-
-                    height="300"  
-
-                    style="border:0;"  
-
-                    allowfullscreen=""  
-
-                    loading="lazy"  
-
-                    referrerpolicy="no-referrer-when-downgrade"> 
-
-                </iframe> 
-
- 
-
-                <h3>Plettenberg Bay</h3> 
-
-                <p>Location reference only. Contact us for directions to either documented address.</p> 
-
-            </div> 
-
-            <div> 
-
-                <h2>Plan your adventure</h2> 
-
-                <p>Choose a package, or contact us with your questions.</p> 
-
-                <a href="Book_us.html">Book us</a> 
-
-            </div> 
-
- 
-
-        </section> 
-
-    </main> 
-
-     <hr> 
-
-     <footer> 
-
-          <section> 
-
-            <h3>Adventure SA</h3> 
-
-            <p>info@adventureescape.co.za</p> 
-
-        </section> 
-
- 
-
-        <section> 
-
-            <h3>Quick Links</h3> 
-
- 
-
-            <nav> 
-
-               <a href="home.html" aria-current="page">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="packages.html">Packages</a> |
-      <a href="ultimate-adventure.html">Details</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="Book_us.html">Book us</a>
-
-            </nav> 
-
-        </section> 
-
- 
-
-        <section> 
-
-            <h3>Working Hours</h3> 
-
-            <p>Mon-Sat: 08:00-17:00</p> 
-
-            <p>Sun: 08:00-12:00</p> 
-
-        </section> 
-
- 
-
-    </footer> 
-
-</body> 
-
-</html> 
-
-</body> 
-
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Adventure SA for package enquiries, assistance and directions in Plettenberg Bay.">
+  <title>Adventure SA | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="home.html" aria-label="Adventure Escape SA home"><img src="assets/logo.png" alt="Adventure Escape SA"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a><a href="about.html">About Us</a>
+        <div class="dropdown"><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="package-menu">Packages</button><div class="dropdown-menu" id="package-menu"><a href="packages.html">All packages</a><a href="ultimate-adventure.html">Ultimate Adventure Day</a></div></div>
+        <a href="packages.html">Details</a><a class="current" href="contact.html" aria-current="page">Contact</a><a class="button button-small" href="booking.html">Book us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <header class="contact-heading">
+      <h1>Contact Adventure SA</h1>
+      <p>Get in touch with us for enquiries or assistance.</p>
+    </header>
+    <div class="contact-layout">
+      <section class="contact-details" aria-label="Contact details">
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+27727177448">+27 72 717 7448</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:clementtshwarelo1@gmail.com">clementtshwarelo1@gmail.com</a></dd></div>
+          <div><dt>Address</dt><dd><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Adventurers+Escape+HQ%2C+11+Charles+Street%2C+Bitou+6600%2C+South+Africa" target="_blank" rel="noopener noreferrer">Adventurers Escape HQ, 11 Charles Street, Bitou 6600</a></dd></div>
+          <div><dt>Social</dt><dd><a href="https://www.facebook.com/adventurersescape/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.instagram.com/escapeadventures_/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.tiktok.com/@a.s.adventure" target="_blank" rel="noopener noreferrer">TikTok</a></dd></div>
+        </dl>
+      </section>
+      <div class="contact-side">
+        <section class="contact-location" aria-labelledby="location-heading">
+          <h2 id="location-heading">Location Overview</h2>
+          <iframe
+            class="contact-map"
+            title="Map showing directions to Adventurers Escape HQ, 11 Charles Street, Bitou 6600"
+            src="https://www.google.com/maps?q=Adventurers+Escape+HQ%2C+11+Charles+Street%2C+Bitou+6600%2C+South+Africa&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <a class="contact-directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=Adventurers+Escape+HQ%2C+11+Charles+Street%2C+Bitou+6600%2C+South+Africa" target="_blank" rel="noopener noreferrer">Get directions</a>
+        </section>
+        <section class="contact-plan">
+          <h2>Plan your adventure</h2>
+          <p>Choose a package, or contact us with your questions.</p>
+          <a class="button" href="booking.html">Book us</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">
+    <section><h2>Adventure SA</h2><a href="mailto:clementtshwarelo1@gmail.com">clementtshwarelo1@gmail.com</a></section>
+    <section><h2>Quick links</h2><nav aria-label="Footer navigation"><a href="home.html">Home</a><span>/</span><a href="about.html">About Us</a><span>/</span><a href="packages.html">Packages</a><span>/</span><a href="ultimate-adventure.html">Details</a><span>/</span><a href="booking.html">Book Us</a></nav></section>
+    <section class="footer-social-hours">
+      <div>
+        <h2>Follow us</h2>
+        <p><a href="https://www.facebook.com/adventurersescape/" target="_blank" rel="noopener noreferrer">Facebook</a><br><a href="https://www.instagram.com/escapeadventures_/" target="_blank" rel="noopener noreferrer">Instagram</a><br><a href="https://www.tiktok.com/@a.s.adventure" target="_blank" rel="noopener noreferrer">TikTok</a></p>
+      </div>
+      <div class="footer-hours-block">
+        <h2>Working Hours</h2>
+        <p>Mon–Sat 08:00–17:00<br>Sun 08:00–12:00</p>
+      </div>
+    </section>
+  </div></footer>
+</body>
+</html>
